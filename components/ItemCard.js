@@ -15,7 +15,7 @@ const ItemCard = ({item, index, onRefresh}) => {
         <View style={{backgroundColor: item.priority.color, alignItems: 'center', paddingVertical: 4, paddingHorizontal: 16, borderWidth: 1, borderRadius: 6}}>
           <Text style={{fontWeight: 'bold', color: item.priority.value === 2 ? 'white' : 'black'}}>{item.priority.label}</Text>
         </View>
-        <View style={{width: 40, alignItems: 'flex-end'}}>
+        <View style={styles.iconContainer}>
           {item.done ? (
             <View style={styles.checklist}>
               <Icon name='check' color={Colors.white} size={20} />
@@ -64,6 +64,10 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.4,
     shadowRadius: 5,
     elevation: 8, 
+  },
+  iconContainer: {
+    width: 40, 
+    alignItems: 'flex-end'
   },
   checklist: {
     width: 25, 
