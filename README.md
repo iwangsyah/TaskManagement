@@ -3,7 +3,7 @@
 ### Images App
 
 <img width="472" alt="Screen Shot 2022-12-26 at 13 36 58" src="https://user-images.githubusercontent.com/31063335/209512905-3e298420-e179-4e17-80cb-aabeb6925a08.png">
-<img width="472" alt="Screen Shot 2022-12-26 at 13 24 26" src="https://user-images.githubusercontent.com/31063335/209511811-fd21d0a3-7a1d-4b51-8c5b-b4de1e48b93b.png">
+<img width="472" alt="Screen Shot 2022-12-26 at 13 50 06" src="https://user-images.githubusercontent.com/31063335/209514046-bdaef322-70dd-47e8-918a-f387c356f858.png">
 <img width="472" alt="Screen Shot 2022-12-26 at 13 44 39" src="https://user-images.githubusercontent.com/31063335/209513550-ebb5b9c6-1b43-4850-bd69-be101c68cf27.png">
 
 
