@@ -11,20 +11,21 @@ const ItemCard = ({item, index, onRefresh}) => {
   return (
     <View>
       <TouchableOpacity style={[styles.itemContainer, styles.shadow]} onPress={() => setDetailVisible(true)}>
-        {item.done && (
-          <View style={styles.checklist}>
-            <Icon name='check' color={Colors.white} size={20} />
-          </View>
-        )}
         <Text style={{flex: 1}}>{item.title}</Text>
         <View style={{backgroundColor: item.priority.color, alignItems: 'center', paddingVertical: 4, paddingHorizontal: 16, borderWidth: 1, borderRadius: 6}}>
           <Text style={{fontWeight: 'bold', color: item.priority.value === 2 ? 'white' : 'black'}}>{item.priority.label}</Text>
         </View>
-        {!item.done && (
-          <TouchableOpacity onPress={() => setAddVisible(true)}>
-            <Icon name='pencil' color={Colors.black} size={20} style={{marginLeft: 16}}/>
-          </TouchableOpacity>
-        )}
+        <View style={{width: 40, alignItems: 'flex-end'}}>
+          {item.done ? (
+            <View style={styles.checklist}>
+              <Icon name='check' color={Colors.white} size={20} />
+            </View>
+          ) : (
+            <TouchableOpacity onPress={() => setAddVisible(true)}>
+              <Icon name='pencil' color={Colors.black} size={20}/>
+            </TouchableOpacity>
+          )}
+        </View>
       </TouchableOpacity>
       <ModalDetail
         item={item}
@@ -71,7 +72,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center', 
     borderRadius: 13,
-    marginRight: 10
+    marginLeft: 16
   }
 });
 
