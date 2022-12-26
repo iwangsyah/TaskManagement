@@ -17,7 +17,7 @@ const Dropdown = ({data, title, onSelected, value}) => {
       <TouchableOpacity style={styles.input} onPress={() => setExpanded(!expanded)}>
       <View style={styles.labelColor(value.color)} />
         <Text style={{flex: 1}}>{value.label}</Text>
-        <Icon name='chevron-down' color={Colors.black} size={20} />
+        <Icon name={expanded ? 'chevron-up' : 'chevron-down'} color={Colors.black} size={20} />
       </TouchableOpacity>
       {expanded && (
         <View style={styles.dropdown}>
