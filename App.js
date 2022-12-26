@@ -57,7 +57,7 @@ const App = () => {
             </View>
             <View style={{width: 1, height: '100%', borderWidth: 1}} />
             <View style={styles.totalContent}>
-              <Text style={styles.totalTitle}>Total</Text>
+              <Text style={styles.totalTitle}>Completed</Text>
               <Text style={{fontSize: 18}}>{completed.length}</Text>
             </View>
           </View>
